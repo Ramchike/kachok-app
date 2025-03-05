@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+[data-theme="dark"] {
+
+    --color-gray-900: hsl(215, 16%, 47%);    /* slate-50 (был slate-900) */
+    --color-gray-800: hsl(210, 40%, 96%);    /* slate-100 */
+    --color-gray-400: hsl(215, 16%, 47%);    /* slate-500 (нейтральный) */
+    --color-gray-300: hsl(215, 28%, 25%);    /* slate-600 */
+    --color-gray-200: hsl(216, 34%, 17%);    /* slate-700 */
+    --color-gray-100: hsl(222, 47%, 11%);    /* slate-800 */
+    --color-red-500: hsl(0, 84%, 60%);       /* red-500 (оставить ярким) */
+    --color-green-100: hsl(150, 96%, 11%);   /* emerald-50 */
+    --color-green-700: hsl(152, 80%, 23%);   /* emerald-800 */
+    --color-green-200: hsl(152, 68%, 38%);   /* emerald-600 */
+    --color-yellow-200: hsl(45, 100%, 21%);   /* amber-500 */
+    --color-yellow-100: hsl(48, 100%, 13%);   /* amber-400 */
+    --color-red-200: hsl(0, 100%, 17%);       /* red-500 */
+    --color-red-100: hsl(0, 100%, 9%);       /* red-600 */
+    --color-blue-500: hsl(217, 91%, 60%);    /* blue-500 (сохранить яркость) */
+    --color-gray-50: hsl(223, 47%, 9%);      /* slate-900 */
+    --color-white: hsl(224, 71%, 4%);        /* slate-900 вместо белого */
+    --color-black: hsl(215, 16%, 47%); 
+}
+  
+button {
+    cursor: pointer;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #64748b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+@layer utilities {
+    .will-change-transform {
+        will-change: transform;
+    }
+
+    .backface-hidden {
+        backface-visibility: hidden;
+    }
+
+    .transform-gpu {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+html.modal-open {
+    padding-right: 6px; 
+}
+  
+@supports (scrollbar-gutter: stable) {
+    html.modal-open {
+      padding-right: 0;
+      scrollbar-gutter: stable;
+    }
+}
+  
+
+.modal-scroll {
+    scrollbar-gutter: stable;
+    overscroll-behavior: contain;
+}

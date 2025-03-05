@@ -1,0 +1,15 @@
+export { default as exercise1 } from './1.jpg';
+export { default as exercise2 } from './2.jpg';
+export { default as exercise3 } from './3.jpg';
+export { default as exercise4 } from './4.jpg';
+export { default as exercise5 } from './5.jpg';
+export { default as exercise6 } from './6.jpg';
+export { default as exercise7 } from './7.jpeg';
+export { default as exercise8 } from './8.jpeg';
+export { default as exercise9 } from './9.jpeg';
+export { default as exercise10 } from './10.jpg';
+export { default as exercise11 } from './11.jpeg';
+export { default as exercise12 } from './12.jpeg';
+export { default as exercise13 } from './13.jpg';
+export { default as exercise14 } from './14.jpg';
+export { default as exercise15 } from './15.jpeg';
